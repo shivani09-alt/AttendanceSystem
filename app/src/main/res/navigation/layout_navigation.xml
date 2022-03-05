@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_navigation"
+    app:startDestination="@id/loginWithOtp">
+
+    <fragment
+        android:id="@+id/loginWithOtp"
+        android:name="com.example.attendancesystemmanagement.LoginWithOtp"
+        android:label="fragment_login_with_otp"
+        tools:layout="@layout/fragment_login_with_otp" >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/addDetails"
+        android:name="com.example.attendancesystemmanagement.AddDetails"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_add_details" >
+        <action
+            android:id="@+id/addDetails_to_dashBoard"
+            app:destination="@id/dashBoard"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/layout_navigation"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerification"
+        android:name="com.example.attendancesystemmanagement.OtpVerification"
+        android:label="fragment_otp_verification"
+        tools:layout="@layout/fragment_otp_verification" >
+        <action
+            android:id="@+id/otpVerification_to_addDetails"
+            app:destination="@id/addDetails"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/layout_navigation"
+            app:popUpToInclusive="true"
+
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoard"
+        android:name="com.example.attendancesystemmanagement.DashBoard"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/dashBoard_to_loginPage"
+            app:destination="@id/loginWithOtp"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/layout_navigation"/>
+        <action
+            android:id="@+id/dashBoard_to_view_user_list"
+            app:destination="@id/viewUserList"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentDetails"
+        android:name="com.example.attendancesystemmanagement.AddStudentDetails"
+        android:label="fragment_add_student_details"
+        tools:layout="@layout/fragment_add_student_details" />
+    <fragment
+        android:id="@+id/addStaff"
+        android:name="com.example.attendancesystemmanagement.AddStaff"
+        android:label="fragment_add_staff"
+        tools:layout="@layout/fragment_add_staff" />
+    <fragment
+        android:id="@+id/viewUserList"
+        android:name="com.example.attendancesystemmanagement.ViewUserList"
+        android:label="fragment_view_student_list"
+        tools:layout="@layout/view_user_list" />
+    <fragment
+        android:id="@+id/viewUserData"
+        android:name="com.example.attendancesystemmanagement.ViewUserData"
+        android:label="fragment_view_user_data"
+        tools:layout="@layout/fragment_view_user_data" />
+</navigation>

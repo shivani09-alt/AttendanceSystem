@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewUserData"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/name"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/enter_your_full_name"
+            android:textSize="13sp"
+            android:lines="1"
+            android:enabled="false"
+            android:textCursorDrawable="@null"
+            android:textColor="@android:color/black"
+            android:background="@color/light_grey"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/mobile_number"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumber"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:lines="1"
+            android:enabled="false"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="@string/enter_mobile_number"
+            android:textCursorDrawable="@null"
+            android:textColor="#AEAAAA"
+            android:background="@color/light_grey"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/email"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/enter_your_email"
+            android:textSize="13sp"
+            android:textCursorDrawable="@null"
+            android:lines="1"
+            android:enabled="false"
+            android:textColor="@android:color/black"
+            android:background="@color/light_grey"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/year"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/selectedYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/enter_your_email"
+            android:textSize="13sp"
+            android:textCursorDrawable="@null"
+            android:lines="1"
+            android:enabled="false"
+            android:textColor="@android:color/black"
+            android:background="@color/light_grey"
+            />
+        <TextView
+            android:id="@+id/yearError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="@string/please_select_year"
+            android:textSize="11sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/department"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/selecteddept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/enter_your_email"
+            android:textSize="13sp"
+            android:textCursorDrawable="@null"
+            android:lines="1"
+            android:enabled="false"
+            android:textColor="@android:color/black"
+            android:background="@color/light_grey"
+            />
+        <TextView
+            android:id="@+id/departmentError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="@string/please_select_department"
+            android:textSize="11sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:layout_margin="40dp"
+            android:textColor="@color/white"
+            android:background="@color/theme"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

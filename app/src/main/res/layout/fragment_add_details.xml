@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddDetails"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Name"
+      android:textColor="@android:color/black"
+      android:textSize="13sp"
+      />
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="15dp"
+      android:layout_marginTop="5dp"
+      android:hint="Enter Your Full Name*"
+      android:textSize="13sp"
+      android:lines="1"
+      android:textCursorDrawable="@null"
+      android:textColor="@android:color/black"
+      android:background="@drawable/box_stroke"
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mobile Number"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phoneNumber"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:enabled="false"
+        android:lines="1"
+        android:textCursorDrawable="@null"
+        android:textColor="#AEAAAA"
+        android:background="@drawable/box_stroke"
+        />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="Email"
+      android:textColor="@android:color/black"
+      android:textSize="13sp"
+      />
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/email"
+
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Your Email*"
+        android:textSize="13sp"
+        android:textCursorDrawable="@null"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:background="@drawable/box_stroke"
+        />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="Location"
+      android:textColor="@android:color/black"
+      android:textSize="13sp"
+      />
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/location"
+
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Your location*"
+        android:textSize="13sp"
+        android:lines="1"
+        android:background="@drawable/box_stroke"
+        android:textCursorDrawable="@null"
+      />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="College Name"
+      android:textColor="@android:color/black"
+      android:textSize="13sp"
+      />
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/organizationName"
+
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Your College name*"
+        android:textSize="13sp"
+        android:background="@drawable/box_stroke"
+        android:textCursorDrawable="@null"
+        android:lines="1"
+      />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="Please Select College"
+      android:textColor="@android:color/black"
+      android:textSize="13sp"
+      android:visibility="gone"
+      />
+
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:visibility="gone">
+    <RadioButton
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School"
+        android:checked="true"
+        android:buttonTint="@color/black"/>
+    <RadioButton
+        android:id="@+id/college"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College"
+        android:buttonTint="@color/black"/>
+
+  </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Department"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <androidx.appcompat.widget.AppCompatEditText
+           android:id="@+id/department"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_marginTop="5dp"
+           android:layout_marginEnd="60dp"
+           android:background="@drawable/box_stroke"
+           android:hint="Add Department"
+           android:lines="1"
+           android:padding="15dp"
+           android:textCursorDrawable="@null"
+           android:textSize="13sp" />
+
+       <ImageView
+           android:id="@+id/saveButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/box_stroke"
+           android:padding="12dp"
+           android:src="@drawable/ic_baseline_check_24" />
+   </RelativeLayout>
+
+      <com.google.android.material.chip.ChipGroup
+          android:id="@+id/chipGroup"
+          style="@style/Widget.MaterialComponents.ChipGroup"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+         />
+      <Button
+          android:id="@+id/registerBtn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Register"
+          android:textAllCaps="false"
+          android:layout_margin="40dp"
+          android:textColor="@color/white"
+          android:background="@color/theme"/>
+
+  </LinearLayout>
+</androidx.core.widget.NestedScrollView>
